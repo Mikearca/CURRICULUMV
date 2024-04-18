@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CV - Miguel Arce</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href=""
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Music API used: HTML5 Audio API -->
+  <script>
+    var soundBackground = new Audio('/www/media/Zensei.mp3');
+soundBackground.loop = true;
+soundBackground.volume = 0.5;
+
+// API Navigator used: Navigator API
+// Comprobación de la compatibilidad del navegador con la reproducción automática de audio
+if (navigator.mediaSession && navigator.mediaSession.setActionHandler) {
+  navigator.mediaSession.setActionHandler('play', function () {
+    soundBackground.play();
+  });
+
+  navigator.mediaSession.setActionHandler('pause', function () {
+    soundBackground.pause();
+  });
+}
+
+// Reproducción de música al cargar la página
+window.addEventListener('load', (event) => {
+  soundBackground.volume = 0.1; // Volumen = 1(100%), 0.5(50%) y 0(0%)
+  soundBackground.play(); // Reproducir la música al cargar la página
+});
+
+// Reproducción de música al recargar la página
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    soundBackground.play();
+  }
+});
+
+// Habilitación de la reproducción automática después de la interacción del usuario
+document.addEventListener('click', function () {
+  if (soundBackground.paused) {
+    soundBackground.play();
+  }
+});
+
+
+  </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="/assets/images/yo.jpg" alt="" style="height: 300px; width: auto;"/>
+                <h1 class="name">Miguel Arce</h1>
+                <h3 class="tagline english">Student</br>(UTTN)</h3>
+                <h3 class="tagline spanish hidden">Estudiante</br>(UTTN)</h3>
+                <hr>
+                <div class="text-center">
+                    <input id="language" type="checkbox" checked data-offstyle="warning"
+                    data-toggle="toggle" data-on="English" data-off="Spanish">
+                </div>
+                
+
+            </div><!--// Perfil-->
+
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="#" >miguel.arce@uttn.mx</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i>+52 8991664393</li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Mikearca" target="_blank">@Mikearca</a></li>
+
+                </ul>
+            </div><!--//Contacto-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title english"> Education </h2>
+                <h2 class="container-block-title spanish hidden"> Educación </h2>
+                <div class="item">
+                    <h4 class="degree english">Systems Engineer</h4>
+                    <h4 class="degree spanish hidden">Ingeniero de Sistemas</h4>
+                    <h5 class="meta">UTTN</h5>
+                    <div class="time">2022 - actual</div>
+                </div><!--//item-->
+            </div><!--//Educación y estudios-->
+
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title english">Languages</h2>
+                <h2 class="container-block-title spanish hidden">Idiomas</h2>
+                <ul class="list-unstyled interests-list english">
+                    <li>Spanish <span class="lang-desc">(Native)</span></li>
+                    <li>English <span class="lang-desc">(Intermediate)</span></li>
+                </ul>
+                <ul class="list-unstyled interests-list spanish hidden">
+                    <li>Español <span class="lang-desc">(Nativo)</span></li>
+                    <li>Ingles <span class="lang-desc">(Intermedio)</span></li>
+                </ul>
+            </div><!--//Idiomas-->
+
+
+
+            <div class="interests-container container-block english">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Explore New Languages</li>
+                    <li>Video Games</li>
+                    <li>Music</li>
+                    <li>Cinema</li>
+                </ul>
+            </div><!--//interests-->
+            <div class="interests-container container-block spanish hidden">
+                <h2 class="container-block-title">Intereses</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Explorar Nuevos Lenguajes</li>
+                    <li>Videojuegos</li>
+                    <li>Música</li>
+                    <li>Cine</li>
+                </ul>
+            </div><!--//interests-->
+
+        </div><!--//sidebar-->
+
+        <div class="main-wrapper">
+
+
+ 			<section class="section summary-section">
+                
+                <h2 class="section-title english"><i class="fa fa-user"></i>Career Profile </h2>
+                <h2 class="section-title spanish hidden"><i class="fa fa-user"></i>Perfil Profesional </h2>
+                <div class="summary">
+                    
+<div class="self-desc english">
+    <p>
+        If I could do anything all my life, it would be learning and be better.
+
+    </p>
+
+    <p>
+
+        I am currently studying engineering in software development and geation at the Technological University of Tamaulipas Norte.
+    </p>
+    My preferred language is JavaScript, since I consider it to be a fairly complete language, and my strength is mainly
+        on the Frontend. I am passionate about frontend since, as I usually say,
+        "With a little, you can do a lot."
+        I have had fun with design and making styles in CSS, and working with Javascript although obviously I have to improve and learn much more about this language and mastering it wouldn't hurt.
+
+         Throughout my training as a programmer I have used different programs and languages ​​to carry out projects such as web pages, mobile applications and even an Android game. Some of these programs have been: Visual Studio Code, Visual Studio, APPInventor, Android Studio, Mendix Studio Pro, Brackets, etc.
+
+         If there is something that I have never been able to do, it is learning how to use databases. Everything related to that topic has always been complicated for me, from MySQL to SQL Server and cloud servers, they are a headache for me and It's one of the reasons why I like Frontend more.
+    </p>
+
+</div>
+<div class="self-desc spanish hidden">
+    <p>
+        Si pudiera hacer algo por toda mi vida, sería aprender y ser mejor.
+
+    </p>
+
+    <p>
+        Actualmente estoy estudiando una ingenieria en desarrollo y geation de sotware en la Universidad Tecnologica de Tamaulipas Norte. 
+    </p>
+        Mi lenguaje de preferencia es JavaScript, ya que considero que es un lenguaje bastante completo, y mi fortaleza esta principalmente
+        en el Frontend. Soy un apacionado al frontend ya que como suelo decir
+        "Con poco, puedes hacer mucho".
+        Me he divertido con el diseño y hacer estilos en css, y trabajar con Javascript aunque obviamente tengo que mejorar y aprender mucho mas acerca de este lenguaje y amaestrarlo no estaria de mas.
+
+         A lo largo de mi formacion como programador he utilizado diferentes programas y lenguajes para realizar proyectos como paginas web, aplicaciones moviles e inclusive un juego para android. Algunas de estos programas han sido: Visual Studio Code, Visual Studio, APPInventor, Android Studio, Mendix Studio Pro, Brackets, etc.
+
+         Si hay algo que nunca se me ha podido dar es aprender a usar las bases de datos, siempre se me ha complicado todo lo relacionado con ese tema, desde MySQL hasta SQL Server y servidores en la nube, son un dolor de cabeza para mi y es una de las razones por las que me gusta mas Frontend.
+    </p>
+
+</div>
+
+
+                </div><!--//resumen-->
+            </section><!--//section-->
+
+
+            <section class="skills-section section">
+                <h2 class="section-title english"><i class="fa fa-code-fork"></i> Skills & Proficiency </h2>
+                <h2 class="section-title spanish hidden"><i class="fa fa-code-fork"></i>Habilidades y Destrezas</h2>
+                <div class="skillset">
+                    <div class="item">
+                        <h3 class="level-title">Python</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="35%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">PHP</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="50%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">CSS</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="50%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+                    <div class="item">
+                        <h3 class="level-title">MySQL</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner"  data-level="30%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+                     
+                    
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="60%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">XAMPP</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="30%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    
+                    
+                    <div class="item">
+                        <h3 class="level-title">Javascript</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="20%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+                     
+                    
+
+                </div>
+            </section><!--//-Habulidades-->
+
+            <section class="skills-section section">
+                <h2 class="section-title english"><i class="fa fa-rocket"></i>Other technologies and expertise</h2>
+                <h2 class="section-title spanish hidden"><i class="fa fa-rocket"></i>Otras tecnologías y conocimientos</h2>
+                <div class="skillset">
+
+                    <div class="item">
+                        <h3 class="level-title">GitHub</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="30%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->                 
+
+
+                    
+                    <div class="item">
+                        <h3 class="level-title">APP Inventor</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="70%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Brackets</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="55%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+                    <div class="item">
+                        <h3 class="level-title">Linux</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="10%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Responsive Design</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="60%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    
+                    <div class="item">
+                        <h3 class="level-title">User experience</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="55%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Visual Code</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="55%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Visual Studio</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="25%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+                    <div class="item">
+                        <h3 class="level-title">Android Studio</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="15%">
+                            </div>
+                        </div><!--//level-bar-->
+                    </div><!--//item-->
+
+
+                </div>
+            </section><!--//-Habulidades--> 
+
+            <section class="section experiences-section">
+                <h2 class="section-title english"><i class="fa fa-briefcase"></i>Jobs & Projects</h2>
+                <h2 class="section-title spanish hidden"><i class="fa fa-briefcase"></i>Trabajos & Proyectos </h2>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Cat-Toe</h3>
+
+                            <div class="time english">January 2024 - Present </div>
+                            <div class="time spanish hidden">Enero 2024 - Presente </div>
+                        </div><!--//upper-row-->
+                        <div class="company">UTTN</div>
+                    </div><!--//meta-->
+                    <div class="details">
+
+                        <span class="english">Knowledge Base: </span>
+                        <span class="spanish hidden">Base de Conocimientos: </span>
+                        <p>
+                            Html, Css, Javascript, Apache Cordova, Gradle, Node Js, Android, SQL Server, ASP.NET.
+                        </p>
+                        <ul class="spanish hidden">
+                            <li>Crear un Juego en Visual Code</li>
+                            <li>Utilizar un servidor web</li>
+                            <li>Consumir tres APIs</li>
+                            <li>Conexión con base de datos remota</li>
+                            <li>Creacion e instalacion de una APK android</li>
+                        </ul>
+                        <ul class="english">
+
+                            <li>Create a Game in Visual Code</li>
+                            <li>Use a web server</li>
+                            <li>Consume three APIs</li>
+                            <li>Connection to remote database</li>
+                            <li>Creation and installation of an Android APK</li>
+                        </ul>
+
+
+                       <p class="english">Cat-Toe was a project for the subject of Web Applications and Application Design, it was carried out for four months where both visual code and visual studio were used and for the database we used SQL Server and for the remote server we used ASP. NET.
+                   </p>
+
+                        <p class="spanish hidden">Cat-Toe fue un proyecto para la materia de Aplicaciones Web y Diseño de Aplicaciones, se llevo a cabo durante cuatro meses donde se usaron tanto visual code como visual studio y para la base de datos utilizamos SQL Server y para el servidor remoto utilizamos ASP.NET.
+                       </p>
+                    </div><!--//details-->
+                </div>
+
+                
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">PI</h3>
+                            <div class="time english">September 2023 - December 2023 </div>
+                            <div class="time spanish hidden">Septiembre 2023 - Diciembre 2023 </div>
+                        </div><!--//upper-row-->
+                        <div class="company">UTTN</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <span class="english">Knowledge Base: </span>
+                        <span class="spanish hidden">Base de Conocimientos: </span>
+
+                        <p>
+                            Html, Css, Bootstrap 5, MySQL, JavaScript, PHP.
+                        </p>
+                        <ul class="english">
+                            <li>Get a Company</li>
+                            <li>Develop a Web Page</li>
+                            <li>Deploy a Bootstrap 5 template to the project</li>
+                            <li>Connect the page with a database</li>
+                            <li>Add security from both sides (User and Administrator)</li>
+                            <li>Present professionally</li>
+                        </ul>
+                        <ul class="spanish hidden">
+                            <li>Conseguir una Empresa</li>
+                            <li>Desarrollar una Pagina web</li>
+                            <li>Implementar una plantilla Bootstrap 5 al proyecto</li>
+                            <li>Conectar la pagina con una base de datos</li>
+                            <li>Agregar seguridad de ambos lados (Usuario y Administrador)</li>
+                            <li>Presentar de forma profesional</li>
+                        </ul>
+
+                        <p class="english">Developing a website for a company, making constant visits and filling out documents about page updates did not present any problem, but the connection to the database was the only problem for me. However, the project was delivered on time and without any problems.
+                       </p>
+                       <p class="spanish hidden">Desarrollar una Pagina web para una empresa, haciendo visitas constantes y llenando documentos acerca de las actualizaciones de la pagina no presento problema alguno, si no que la conexion a la base de datos fue el unico problema para mi. Sin embargo el proyecto se entrego a tiempo y sin problema alguno.
+                        </p>
+                    </div><!--//details-->
+                </div>
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Assassin´s Creed</h3>
+                            <div class="time english">January 2020 - JUly 2020 </div>
+                            <div class="time spanish hidden">Enero 2020 - JUlio 2020 </div>
+                        </div><!--//upper-row-->
+                        <div class="company">BMR</div>
+                    </div><!--//meta-->
+                    <div class="details">
+
+                        <span class="english">Knowledge Base: </span>
+                        <span class="spanish hidden">Base de Conocimientos: </span>
+                        
+
+                        <p>
+                            Hml, Css.
+                        </p>
+                        <ul class="english">
+                            <li>Develop a website</li>
+                            <li>Add at least 5 pages</li>
+                            <li>Talk about a topic of interest</li>
+                            <li>Create an eye-catching design</li>
+                        </ul>
+                        <ul class="spanish hidden">
+                            <li>Desarrollar una pagina web</li>
+                            <li>Agregar al menos 5 paginas</li>
+                            <li>Hablar de algun tema de interes</li>
+                            <li>Crear un diseño llamativo</li>
+                        </ul>
+
+                        <p class="english" >
+                            One of my favorite projects, without a doubt, was during high school, I was asked to create a website using only Html and CSS. This page should be about what I wanted and since it is one of my favorite sagas I decided to make it Assassin's Creed. This project did not present me with any problems since the requirements were too simple.
+                        </p>
+
+                        <p class="spanish hidden" >
+                            Uno de mis proyectos favoritos sin duda, fue durante la preparatoria, se me pidio realizar una pagina web utilizando solo Html y css. Dicha pagina deberia tratar de lo que yo quisiera y como es una de mis sagas favoritas decidi hacerla de Assassin's Creed. Este proyecto no me presento problema alguno ya que los requerimientos eran demasiado simples.
+                        </p>
+                    </div><!--//details-->
+                </div>
+
+            </section><!--//section-->
+
+
+
+            <div class="english">
+                <section class="section projects-section">
+                    <h2 class="section-title"><i class="fa fa-archive"></i>Achievements (Certifications, Courses, Talks)</h2>
+                    
+
+                    <div class="item">
+                        <span class="project-title"><a href="https://academy.mendix.com/link/certifications/23/rapid" >Mendix Become a Rapid Developer</a></span>
+                         - <span class="project-tagline">Mexico, 2024</span>
+                    </div><!--//item-->
+                    <div class="item">
+                        <span class="project-title"><a href="#hook" >Cisco Networking Essentials</a></span>
+                         - <span class="project-tagline">Mexico - UTTN 2024</span>
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <span class="project-title"><a href="#hook" >Cisco Packet Tracer</a></span>
+                         - <span class="project-tagline">Mexico 2023</span>
+                    </div><!--//item-->                
+                    <div class="item">
+                </section><!--//section-->  
+            </div>
+            
+
+            <div class="spanish hidden">
+                <section class="section projects-section">
+                    <h2 class="section-title"><i class="fa fa-archive"></i>Cursos, Talleres, Ponencias</h2>
+    
+                    <div class="item">
+                        <span class="project-title"><a href="https://academy.mendix.com/link/certifications/23/rapid" >Mendix Become a Rapid Developer</a></span>
+                         - <span class="project-tagline">México, 2024</span>
+                    </div><!--//item-->
+                    <div class="item">
+                        <span class="project-title"><a href="#hook" >Cisco Networking Essentials</a></span>
+                         - <span class="project-tagline">México - UTTN 2024</span>
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <span class="project-title"><a href="#hook" >Cisco Packet Tracer</a></span>
+                         - <span class="project-tagline">México 2023</span>
+                    </div><!--//item-->                
+                    <div class="item">
+                </section><!--//section-->  
+            </div>
+            
+
+
+
+        </div><!--//main-body-->
+    </div>
+
+    <footer class="footer">
+        <div class="text-center">
+
+        </div>
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="/assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+</html>
